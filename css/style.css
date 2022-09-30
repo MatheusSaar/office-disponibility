@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #242424;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.blueprint {
+  position: relative;
+  margin: auto;
+  width: fit-content;
+  margin-top: 6.5vh;
+  border: 2px solid red;
+  user-select: none;
+}
+
+.styleOffice {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  cursor: pointer;
+}
+
+@keyframes idleOfficeAnimation {
+  0% {
+    background-color: green
+  }
+
+  100% {
+    background-color: greenyellow
+  }
+}
+
+@keyframes usedOfficeAnimation {
+  0% {
+    background-color: brown
+  }
+
+  100% {
+    background-color: red
+  }
+}
+
+#office1 {
+  left: 26px;
+  top: 26px;
+  animation: idleOfficeAnimation 1500ms alternate ease-out infinite;
+}
+
+#office2 {
+  left: 118px;
+  top: 26px;
+  animation: idleOfficeAnimation 1500ms alternate ease-out infinite;
+}
+
+#office3 {
+  left: 210px;
+  top: 26px;
+  animation: idleOfficeAnimation 1500ms alternate ease-out infinite;
+}
+
+#office4 {
+  left: 426px;
+  top: 26px;
+  animation: idleOfficeAnimation 1500ms alternate ease-out infinite;
+}
+
+#office5 {
+  left: 610px;
+  top: 420px;
+  animation: idleOfficeAnimation 1500ms alternate ease-out infinite;
+}
+
+#office6 {
+  left: 518px;
+  top: 420px;
+  animation: idleOfficeAnimation 1500ms alternate ease-out infinite;
+}
+
+#office7 {
+  left: 165px;
+  top: 415px;
+  animation: idleOfficeAnimation 1500ms alternate ease-out infinite;
+}
+
+#office8 {
+  left: 61px;
+  top: 258px;
+  animation: idleOfficeAnimation 1500ms alternate ease-out infinite;
+}
+
+.description {
+  display: inline;
+  position: absolute;
+  top: 13%;
+  left: 70%;
+}
+
+.descriptionStyle {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  width: fit-content;
+}
